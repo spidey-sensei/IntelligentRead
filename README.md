@@ -39,3 +39,6 @@ intelligentread/
 │   └──header.css            #common header on all pages 
 ├── requirements.txt         # Python dependencies
 └── README.md                # You're here!
+
+
+Credits: Pinterest
