@@ -25,17 +25,17 @@ intelligentread/
 ├── app.py                   # Main application file (Flask entry point)
 ├──books.csv                 # Dataset used
 ├── templates/               # HTML templates (for Flask)
-|   ├──index.html
-|   ├──recommendations.htmt
-|   ├──genre.html
-|   └──book_detail.html
+│   ├──index.html
+│   ├──recommendations.htmt
+│   ├──genre.html
+│   └──book_detail.html
 ├── static/                  # Static files (images, CSS)
-|   ├──index.jpeg
-|   ├──logo.jpg
-|   ├──index.css
-|   ├──recommendations.css
-|   ├──genre.css
-|   ├──book_detail.css
-|   └──header.css            #common header on all pages 
+│   ├──index.jpeg
+│   ├──logo.jpg
+│   ├──index.css
+│   ├──recommendations.css
+│   ├──genre.css
+│   ├──book_detail.css
+│   └──header.css            #common header on all pages 
 ├── requirements.txt         # Python dependencies
 └── README.md                # You're here!
