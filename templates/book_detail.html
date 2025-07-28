@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ book.title }} - Book Details</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='book_detail.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='header.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link rel="icon" href="{{ url_for('static', filename='logo.jpg') }}" type="image/x-icon">
+</head>
+<body>
+    <div class="header">
+        <a href="/" class="logo-title-link">
+            <div class="logo-title">
+                <div class="logo">
+                    <img class="intelligentread-logo" src="{{ url_for('static', filename='logo.jpg') }}">
+                </div>
+                <div class="title">
+                    <p class="intelligentread-title">Intelligent<span class="read">Read</span></p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+    <div class="container">
+
+        <div class="book-detail-card">
+            <div class="thumbnail">
+                <img src="{{ book.thumbnail_url }}" alt="Cover of {{ book.title }}">
+                
+            </div>
+            <div class="info">
+                <h1 class="book-title">{{ book.title }}</h1>
+                <p><strong>Author:</strong> {{ book.authors }}</p>
+                <p><strong>Rating:</strong> {{ book.average_rating }}</p>
+                <p><strong>Genres:</strong> {{ book.categories }}</p>
+                <p class="description"><strong>Description:</strong> {{ book.description }}</p>
+            </div>
+        </div>
+        
+        
+        <div class="back-link-container">
+            <a class="link" href="#" onclick="history.back(); return false;">
+                <div>
+                    <p class="back-link">Back</p>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr>
+    <h2 class="explore">Explore More Books</h2>
+    <div class="random-books-grid">
+        {% for b in random_books.itertuples() %}
+        <div class="random-book-card">
+            <a href="{{ url_for('book_detail', title=b.title) }}">
+                <img src="{{ b.thumbnail_url }}" alt="Cover of {{ b.title }}">
+                <p>{{ b.title }}</p>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+
+</body>
+</html>
