@@ -1,6 +1,6 @@
 # IntelligentRead
 
-**IntelligentRead** is a book recommendation system which displays the top-rated books of the selected genre or book-title.
+**IntelligentRead** is a book recommendation system which displays the top-rated books of the selected genre or related book-title.
 
 ## 🚀 Features
 
