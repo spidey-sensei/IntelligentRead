@@ -1,0 +1,43 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Environment variables / secrets
+.env
+*.env
+
+# Python virtual environment
+venv/
+ENV/
+env/
+.venv/
+
+# Logs
+*.log
+
+# Flask instance folder (optional, if used)
+instance/
+
+# IDE/editor settings
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# 💻 OS/system files
+.DS_Store
+Thumbs.db
+
+# PIP wheel cache
+pip-wheel-metadata/
+
+# Deployment-related
+*.egg-info/
+dist/
+build/
+
+# Docker
+*.dockerfile
+docker-compose.yml
