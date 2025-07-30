@@ -38,6 +38,7 @@ intelligentread/
 │   ├──book_detail.css
 │   └──header.css            #common header on all pages 
 ├── requirements.txt         # Python dependencies
+├── .gitignore
 └── README.md                # You're here!
 
 
