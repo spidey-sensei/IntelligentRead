@@ -67,15 +67,6 @@ def home():
     random_books = df.sample(n=20)
     return render_template("index.html", books=books, random_books=random_books)
 
-@app.route("/signin")
-def signin():
-    return render_template("signin.html")
-
-@app.route("/signup")
-def signup():
-    return render_template("signup.html")
-
-
 @app.route("/recommend", methods=["POST"])
 def recommend():
     input_str = request.form.get("book").strip()
